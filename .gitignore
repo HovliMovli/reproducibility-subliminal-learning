@@ -1,0 +1,20 @@
+# API key and local env
+.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Full emergent corpora (large); repo ships *_first1000.jsonl for teacher FT
+data/emergent_misalignment/insecure.jsonl
+data/emergent_misalignment/secure.jsonl
+data/emergent_misalignment/educational.jsonl
+data/cache/
+
+# Fresh run logs (committed results live under outputs/ without these)
+outputs/*log*.txt
+outputs/pipeline*.txt

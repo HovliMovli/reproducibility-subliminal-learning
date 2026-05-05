@@ -1,0 +1,24 @@
+# Models (override with env OPENAI_TEACHER_MODEL etc. if needed)
+teacher_model: "gpt-4.1"
+student_base_model: "gpt-4.1"
+strong_filter_model: "gpt-4.1"
+judge_model: "gpt-4.1"
+
+# Dataset sizes (TA / project: use 1000 final rows everywhere)
+target_train_examples: 1000
+max_generation_attempts_multiplier: 8
+
+# Generation
+temperature: 1.0
+max_output_tokens: 512
+
+# CoT misalignment filter (paper Appendix D.4)
+alignment_score_threshold: 78
+
+# SFT (epochs set when you create the fine-tuning job in OpenAI dashboard or via API)
+sft_epochs: 10
+
+paths:
+  data_dir: "data"
+  emergent_subdir: "emergent_misalignment"
+  outputs_dir: "outputs"
