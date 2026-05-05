@@ -1,7 +1,7 @@
 # Subliminal learning (Cloud et al. 2025) — OpenAI reproduction kit
 
 Course / grading note: this repo is **code + checkpoints + tabular results**
-only (no LaTeX report here; that is submitted separately). Under **`outputs/`**
+only. Under **`outputs/`**
 you will find `eval_summary.csv`, `eval_log.jsonl`, `ft_jobs.jsonl`, and
 `full_run/**/*.jsonl`. Fresh-run `*log*.txt` files stay local and are
 gitignored. **Do not commit `.env`.** There is no API key in this tree; put
